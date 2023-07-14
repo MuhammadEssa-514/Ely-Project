@@ -1,5 +1,5 @@
 {
-  "homepage": "http://muhammadessa-514.github.io/Ely-Project  ",
+  "homepage": "http://muhammadessa-514.github.io/Ely-Project",
   "name": "elyx-project",
   "version": "0.1.0",
   "private": true,
@@ -15,8 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
