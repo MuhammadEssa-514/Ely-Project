@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import {img1,img2} from "..//../images"
+import {img1,img2,img4,img5,img6,img7,img8,} from "..//../images/index.js"
 
 function MyListing() {
     const [currentTime,setCurrentTime]=useState(new Date().toLocaleDateString())
@@ -24,7 +24,7 @@ function MyListing() {
         },
         {
             id:2,
-            image:img1,
+            image:img2,
             model:"2990",
             name:"Mitsubishi Delica Star Wagon",
             engine:"2WD"
@@ -32,7 +32,7 @@ function MyListing() {
         },
         {
             id:3,
-            image:img1,
+            image:img4,
             model:"3990",
             name:"Mitsubishi Delica Star Wagon",
             engine:"3WD"
@@ -40,7 +40,7 @@ function MyListing() {
         },
         {
             id:4,
-            image:img1,
+            image:img5,
             model:"4990",
             name:"Mitsubishi Delica Star Wagon",
             engine:"4WD"
@@ -48,7 +48,7 @@ function MyListing() {
         },
         {
             id:5,
-            image:img1,
+            image:img6,
             model:"5990",
             name:"Mitsubishi Delica Star Wagon",
             engine:"5WD"
@@ -56,7 +56,7 @@ function MyListing() {
         },
         {
             id:6,
-            image:img1,
+            image:img8,
             model:"6990",
             name:"Mitsubishi Delica Star Wagon",
             engine:"6WD"
@@ -64,7 +64,7 @@ function MyListing() {
         },
         {
             id:7,
-            image:img1,
+            image:img7,
             model:"7990",
             name:"Mitsubishi Delica Star Wagon",
             engine:"7WD"
@@ -91,9 +91,9 @@ function MyListing() {
     <div className="main w-[1072px] h-[108px]">
       {list.map((i)=>(
         <div className="list1 flex justify-between items-center border mb-2" key={i.id}>
-        <div className="content text-[18px] font-semibold flex items-center">
-           <img src={img1} alt="" className='w-[152px] h-[108px]'/>
-           <h3 className='pl-5'>{i.model} {i.name} {i.engine}</h3>
+        <div className="content text-[18px] font-bold flex items-center">
+            <div className='w-[152px] h-[108px]'><img src={i.image} alt="images for list" /></div>
+            <h3 className='pl-5'>{i.model} {i.name} {i.engine}</h3>
         </div>
        <p  className='pr-5 text-gray-400'>ON {currentTime}</p>
      </div>
