@@ -208,7 +208,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <section>
+      <section>
         <Cta />
       </section>
       <section>
@@ -218,7 +218,7 @@ export default function Home() {
         <div>
           <Example />
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }
