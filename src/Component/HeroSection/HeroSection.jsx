@@ -22,7 +22,6 @@ function HeroSection() {
       const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
       const seconds = Math.floor((distance % (60 * 1000)) / 1000);
       if (distance < 0) {
-        alert("this is end");
       } else {
         setTimerDays(days);
         setTimerHours(hours);

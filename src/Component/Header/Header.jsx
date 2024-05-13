@@ -14,8 +14,8 @@ export default function NavBar() {
     {name:"Get in Email",link:"/GetinEmail"},
   ];
   return (
-    <nav className="container">
-      <div className="justify-between items-center flex-wrap px-4 mx-auto  Nav:items-center Nav:flex Nav:px-8">
+    <nav className="container m-auto">
+      <div className=" justify-between items-center flex-wrap px-4 mx-auto  Nav:items-center Nav:flex Nav:px-8">
         <div>
           <div className="flex flex-wrap items-center justify-between py-3 Nav:py-5 Nav:full">
             <a href="javascript:void(0)">
