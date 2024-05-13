@@ -1,21 +1,25 @@
-import React from 'react'
-import SideBar from '../../Component/SideBar/SideBar'
-import MyListing from '../../Component/MyListing/MyListing'
+import React from "react";
+import HowItsWorkBanner from "../../Component/HowItsWorkBanner/HowItsWorkBanner";
+import Breadcumb from "../../Component/Breadcumb/Breadcumb";
+import HowItsWorkContent from "../../Component/HowItsWorkContent/HowitsWorkContent";
+import { PopularItems } from "../../Component";
+// import Footer from "../../Component/Footer/Footer";
+
 
 export default function HowitWorks() {
-      return (
-   <>
-   <section className='container m-auto'>
+  return (
+    <div>
+      <Breadcumb />
+      <HowItsWorkBanner />
+      <HowItsWorkContent/>
+      <PopularItems/>
 
-    <h1 className='text-[60px] font-bold pb-10 ml-[368px]'>My Listing</h1>
-    <div className='flex'>
-          <div className="sidebar"><SideBar/></div>
-          <div className="list"><MyListing/></div>
+      <section>
+      <div>
+        {/* <Footer bgColor="bg-[#FFFFFF]" textColor="text-[#353535]" /> */}
+      </div>
+      </section>
+
     </div>
-    
-   </section>
-   {/* <SideBar/>
-   <MyListing/> */}
-   </>
-  )
+  );
 }

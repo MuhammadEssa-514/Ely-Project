@@ -107,9 +107,10 @@ const navigation = {
   ],
 };
 
-function Example() {
+function Footer({ bgColor, textColor }) {
+  
   return (
-    <footer className="bg-[#353535]" aria-labelledby="footer-heading">
+    <footer className={`${bgColor}`} aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -118,7 +119,7 @@ function Example() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <img className="h-10" src={logo} alt="Company name" />
-            <p className="text-sm leading-6 w-[75%] text-gray-300">
+            <p className={`text-md leading-5 text ${textColor}`}>
               BaT Auctions are the best way to buy and sell classic, collector,
               and enthusiast vehicles.
             </p>
@@ -148,7 +149,7 @@ function Example() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-md leading-6 text-gray-300 hover:text-white"
+                        className={`text-md leading-5 text ${textColor}`}
                       >
                         {item.name}
                       </a>
@@ -166,7 +167,7 @@ function Example() {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-md leading-6 text-gray-300 hover:text-white"
+                        className={`text-md leading-5 text ${textColor}`}
                       >
                         {item.name}
                       </a>
@@ -187,7 +188,7 @@ function Example() {
                       <div> {item.icon} </div>
                       <a
                         href={item.href}
-                        className="text-md leading-6 text-gray-300 hover:text-white"
+                        className= {`text-md leading-5 text ${textColor}`}
                       >
                         {item.name}
                       </a>
@@ -200,9 +201,9 @@ function Example() {
         </div>
 
         <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24 text-center">
-          <p className="text-md leading-5 text-blue-500 ">
-            <span className="text-[white]">©</span> Auksjonen.no{" "}
-            <span className="text-[white]">
+          <p className="text-[blue]">
+            <span className={`text-md leading-5 text ${textColor}`}>©</span> Auksjonen.no{" "}
+            <span className={`text-md leading-5 text ${textColor}`}>
               <b>AS</b> 2021 all rights reserved
             </span>
           </p>
@@ -211,4 +212,4 @@ function Example() {
     </footer>
   );
 }
-export default Example;
+export default Footer;

@@ -4,13 +4,11 @@ import Img from "../../images/IMG-M.png";
 import { MdWatchLater } from "react-icons/md";
 
 export default function HeroBanner1() {
-  const [currentTime, setCurrentTime] = useState(
-    new Date().toLocaleTimeString()
-  );
+  const [currentTime, setCurrentTime] = useState();
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTime(new Date().toLocaleTimeString());
-    }, 1000);
+    },1000);
     return () => {
       clearInterval(interval);
     };
@@ -18,8 +16,8 @@ export default function HeroBanner1() {
 
   return (
     <div>
-      <div className="w-[100%] flex">
-        <div className="w-[55%] flex flex-wrap justify-end items-center bg-white">
+      <div className="w-[100%] grid grid-cols-1 lg:grid-cols-2">
+        <div className="flex flex-wrap justify-center lg:justify-end lg:mt-5 items-center bg-white">
           <div className="w-[80%] bg-white">
             <select className="w-[150px] text-[20px] text-blue-700 font-normal p-2 border-blue-700 border-2">
               <option value="">Cars</option>
@@ -68,7 +66,7 @@ export default function HeroBanner1() {
         </div>
         <div
           style={{ backgroundImage: `url(${Img})` }}
-          className="w-[45%] h-[80vh] bg-cover"
+          className="h-[80vh] bg-cover"
         ></div>
       </div>
     </div>
