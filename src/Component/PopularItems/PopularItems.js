@@ -4,10 +4,10 @@ import Button from "../Button/Button";
 const PopularItems = () => {
   return (
     <>
-      <div className="flex justify-around items-center">
+      <div className="flex justify-around items-center m-10">
         <div>
-          <h1 className="capitalize font-[Poppins] font-bold text-4xl leading-10">
-            the <span className="text-[#0C50CA]">best marketplace</span> for All
+          <h1 className="capitalize font-bold text-4xl leading-10">
+            the <span className="text-[#0C50CA] ">best marketplace</span> for All
             Products
           </h1>
         </div>

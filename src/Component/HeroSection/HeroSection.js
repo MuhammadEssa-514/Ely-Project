@@ -3,6 +3,8 @@ import Img from "../../images/imgcar.png";
 import Button from "../Button/Button";
 import TimeBtn from "./TimeBtn";
 
+// muhammad ratan
+
 function HeroSection() {
   const [timerDays, setTimerDays] = useState();
   const [timerHours, setTimerHours] = useState();
@@ -22,11 +24,11 @@ function HeroSection() {
       const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
       const seconds = Math.floor((distance % (60 * 1000)) / 1000);
       if (distance < 0) {
-      } else {
         setTimerDays(days);
         setTimerHours(hours);
         setTimerMinutes(minutes);
         setTimerSeconds(seconds);
+      } else {
       }
     });
   };

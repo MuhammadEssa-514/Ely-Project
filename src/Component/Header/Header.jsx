@@ -14,17 +14,16 @@ export default function NavBar() {
     {name:"Get in Email",link:"/GetinEmail"},
   ];
   return (
-    <nav className="container m-auto">
-      <div className=" justify-between items-center flex-wrap px-4 mx-auto  Nav:items-center Nav:flex Nav:px-8">
+    <nav className="container">
+      <div className="justify-between items-center flex-wrap px-4 mx-auto  Nav:items-center Nav:flex Nav:px-8">
         <div>
           <div className="flex flex-wrap items-center justify-between py-3 Nav:py-5 Nav:full">
-            <a href="javascript:void(0)">
+      
               <img
                 src={logo}
                 alt="...."
                 className="w-[177.5px] j-[60px]"
               />
-            </a>
             <div className="Nav:hidden ">
               <button
                 className="p-2 text-white bg-blue-700 rounded-md outline-none focus:border-white focus:border mr-3"
