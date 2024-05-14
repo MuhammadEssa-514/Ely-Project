@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { CiClock2 } from "react-icons/ci";
 // Muhammad Rayyan
+// muhammmad rayyan-2
 
 const AuctionCard = ({image,price,model,name,engine,location}) => {
 
